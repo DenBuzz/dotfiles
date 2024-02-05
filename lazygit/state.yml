@@ -4,11 +4,9 @@ recentrepos:
 - /home/trey/src/dagr
 - /home/trey/src/dagr/jams
 - /home/trey/src/dagr/cord
-- /home/trey/src/dev-wrapper
 - /home/trey/src/dagr/forge-nn
+- /home/trey/src/dev-wrapper
 - /home/trey/src/afsim-docker
-- /home/trey/src/dagr-p
-- /home/trey/src/dagr-front-end
 startuppopupversion: 5
 customcommandshistory:
 - lvim

@@ -1,7 +1,7 @@
 return {
   -- disable indent
-  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-  { "jay-babu/mason-nvim-dap.nvim", enabled = false },
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl",   opts = {} },
+  { "jay-babu/mason-nvim-dap.nvim",        enabled = false },
   {
     "williamboman/mason.nvim",
     opts = {

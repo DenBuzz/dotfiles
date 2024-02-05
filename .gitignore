@@ -3,6 +3,7 @@
 !/.gitignore
 !/nvim
 !/tmux
+!/tmuxp
 !/powerline
 !/lazygit
 !/alacritty
