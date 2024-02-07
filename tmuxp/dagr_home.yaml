@@ -8,6 +8,8 @@ windows:
   - window_name: container shell
     panes: 
       - podman exec -it dagr-dev zsh
+  - window_name: local shell
+    start_directory: ~/src/dagr
   - window_name: system monitor
     panes:
       - nvtop
