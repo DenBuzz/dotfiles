@@ -1,7 +1,7 @@
 [window]
 dynamic_padding=true
 startup_mode="Maximized"
-opacity=0.98
+opacity=0.93
 dimensions={columns=200, lines=50}
 
 [font]

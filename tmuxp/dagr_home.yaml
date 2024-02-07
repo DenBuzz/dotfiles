@@ -18,7 +18,10 @@ windows:
           - cd ~/src/dagr
           - lazygit
   - window_name: services
-    start_directory: ~/src/dagr
+    start_directory: ~/src
     panes:
       - shell_command:
-          - tensorboard --logdir data/ray_results
+          - tensorboard --logdir dagr/data/ray_results
+      - shell_command:
+        - podman exec -it dagr-dev zsh
+        - streamlit run data_exploration/visualization/streamlit_graph_vis/app.py
