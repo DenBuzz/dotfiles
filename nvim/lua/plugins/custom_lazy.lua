@@ -2,14 +2,14 @@ return {
   -- disable indent
   { "lukas-reineke/indent-blankline.nvim", main = "ibl",   opts = {} },
   { "jay-babu/mason-nvim-dap.nvim",        enabled = false },
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "pyright",
-      },
-    },
-  },
+  -- {
+  --   "williamboman/mason.nvim",
+  --   opts = {
+  --     ensure_installed = {
+  --       "pyright",
+  --     },
+  --   },
+  -- },
   {
     "nvim-neotest/neotest",
     -- dependencies = {
@@ -34,14 +34,14 @@ return {
       require("dap.ext.vscode").load_launchjs()
     end,
   },
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        pyright = {},
-      },
-    },
-  },
+  -- {
+  --   "neovim/nvim-lspconfig",
+  --   opts = {
+  --     servers = {
+  --       pyright = {},
+  --     },
+  --   },
+  -- },
   {
     "stevearc/conform.nvim",
     opts = {
@@ -56,6 +56,15 @@ return {
     },
   },
   {
+    "catppuccin/nvim",
+    lazy = false,
+    config = function()
+      require("catppuccin").setup({
+        transparent_background = true,
+      })
+    end,
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "catppuccin",
@@ -63,6 +72,12 @@ return {
   },
   -- Use <tab> for completion and snippets (supertab)
   -- first: disable default <tab> and <s-tab> behavior in LuaSnip
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      background_colour = "#000000",
+    },
+  },
   {
     "L3MON4D3/LuaSnip",
     keys = function()

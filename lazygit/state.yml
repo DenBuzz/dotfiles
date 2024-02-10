@@ -2,10 +2,10 @@ lastupdatecheck: 0
 recentrepos:
 - /home/trey/.config
 - /home/trey/src/dagr
-- /home/trey/src/dagr/jams
-- /home/trey/src/dagr/cord
-- /home/trey/src/dagr/forge-nn
 - /home/trey/src/dev-wrapper
+- /home/trey/src/dagr/cord
+- /home/trey/src/dagr/jams
+- /home/trey/src/dagr/forge-nn
 - /home/trey/src/afsim-docker
 startuppopupversion: 5
 customcommandshistory:
