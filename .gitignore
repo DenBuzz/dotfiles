@@ -1,11 +1,11 @@
 /*
 
-!/.gitignore
-!/nvim
-!/tmux
-!/tmuxp
-!/powerline
-!/lazygit
-!/alacritty
+!/.gitignore/
+!/nvim/
+!/tmux/
+!/tmuxp/
+!/powerline/
+!/lazygit/
+!/alacritty/
 
 lazygit/state.yml
