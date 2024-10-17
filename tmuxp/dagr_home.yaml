@@ -14,15 +14,15 @@ windows:
         - podman exec -it dagr-dev zsh
   - window_name: local shell
     start_directory: ~/src/dagr
-  - window_name: lazygit
-    panes:
-      - shell_command:
-          - cd ~/src/dagr
-          - lazygit
-  - window_name: system monitor
-    panes:
-      - nvtop
-      - htop
+  # - window_name: lazygit
+  #   panes:
+  #     - shell_command:
+  #         - cd ~/src/dagr
+  #         - lazygit
+  # - window_name: system monitor
+  #   panes:
+  #     - nvtop
+  #     - htop
   - window_name: services
     start_directory: ~/src
     layout: even-vertical
@@ -34,4 +34,4 @@ windows:
         - podman exec -it dagr-dev zsh
         - streamlit run data_exploration/visualization/streamlit_graph_vis/app.py
       - shell_command:
-        - echo "mystic"
+        - echo mystic_replay

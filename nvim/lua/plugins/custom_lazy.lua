@@ -3,7 +3,7 @@ return {
   -- local code llama
   {
     "David-Kunz/gen.nvim",
-    enable = false,
+    enabled = false,
     opts = {
       display_mode = "split",
       show_prompt = true,
@@ -14,29 +14,14 @@ return {
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
   { "nvim-neo-tree/neo-tree.nvim", branch = "v3.x", opts = { window = { position = "right", width = 60 } } },
   {
-    "nvim-neotest/neotest",
-    -- dependencies = {
-    --   "nvim-lua/plenary.nvim",
-    --   "antoinemadec/FixCursorHold.nvim",
-    --   "nvim-treesitter/nvim-treesitter",
+    "rcarriga/nvim-notify",
+    enabled = false,
+    -- opts = {
+    --   background_colour = "#000000",
     -- },
-    opts = {
-      adapters = {
-        ["neotest-python"] = {
-          dap = { just_my_code = false },
-          pytest_discover_instances = true,
-        },
-      },
-    },
   },
   -- Use <tab> for completion and snippets (supertab)
   -- first: disable default <tab> and <s-tab> behavior in LuaSnip
-  -- {
-  --   "rcarriga/nvim-notify",
-  --   opts = {
-  --     background_colour = "#000000",
-  --   },
-  -- },
   {
     "lewis6991/gitsigns.nvim",
     opts = {
