@@ -4,7 +4,7 @@ return {
     adapters = {
       ["neotest-python"] = {
         dap = { justMyCode = false },
-        -- pytest_discover_instances = true,
+        pytest_discover_instances = true,
       },
     },
   },
