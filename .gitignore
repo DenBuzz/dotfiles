@@ -2,6 +2,7 @@
 
 !/.gitignore/
 !/nvim/
+!/kitty/
 !/tmux/
 !/tmuxp/
 !/powerline/
