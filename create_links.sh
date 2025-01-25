@@ -14,7 +14,7 @@ function create_symlink() {
     if [ "$answer" != "y" ]; then
       return
     fi
-    rm -f "$target"
+    rm -rf "$target"
   fi
 
   ln -s "$source" "$target"
@@ -24,6 +24,7 @@ function create_symlink() {
 # Create symlinks for dotfiles
 
 create_symlink "alacritty"
+create_symlink "ghostty"
 create_symlink "kitty"
 create_symlink "lazygit"
 create_symlink "nvim"
