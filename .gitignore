@@ -9,4 +9,5 @@
 !/lazygit/
 !/alacritty/
 
+!create_links.sh
 lazygit/state.yml
