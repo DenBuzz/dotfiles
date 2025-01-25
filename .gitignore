@@ -8,6 +8,7 @@
 !/powerline/
 !/lazygit/
 !/alacritty/
+!/ghostty/
 
 !create_links.sh
 lazygit/state.yml
