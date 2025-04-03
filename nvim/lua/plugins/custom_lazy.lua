@@ -1,15 +1,31 @@
 return {
   -- { "akinsho/bufferline.nvim", enabled = false },
   -- local code llama
-  {
-    "David-Kunz/gen.nvim",
-    enabled = false,
-    opts = {
-      display_mode = "split",
-      show_prompt = true,
-      show_model = true,
-    },
-  },
+  -- {
+  --   "olimorris/codecompanion.nvim",
+  --   dependencies = {
+  --     "nvim-lua/plenary.nvim",
+  --     "nvim-treesitter/nvim-treesitter",
+  --   },
+  --   opts = {
+  --     strategies = {
+  --       -- Change the default chat adapter
+  --       chat = {
+  --         adapter = "ollama",
+  --       },
+  --       inline = {
+  --         adapter = "ollama",
+  --       },
+  --       cmd = {
+  --         adapter = "ollama",
+  --       },
+  --     },
+  --     opts = {
+  --       -- Set debug logging
+  --       log_level = "DEBUG",
+  --     },
+  --   },
+  -- },
   -- disable indent
   -- { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
   {

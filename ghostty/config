@@ -42,6 +42,8 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 font-size = 10
-window-decoration = false
-background-opacity = 0.6
-theme = GruvboxDarkHard
+# window-decoration = false
+theme = catppuccin-mocha
+background = #0f0f11
+background-blur = 1
+background-opacity = 0.7
