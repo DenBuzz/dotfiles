@@ -1,8 +1,0 @@
-[window]
-dynamic_padding = true
-startup_mode = "Maximized"
-opacity = 0.75
-dimensions = { columns = 200, lines = 50 }
-
-[font]
-size = 9
