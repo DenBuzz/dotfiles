@@ -1,0 +1,37 @@
+session_name: dagr_home
+windows:
+  - window_name: nvim
+    start_directory: ~/src/dev-wrapper
+    panes:
+      - shell_command:
+        - ./run.sh
+        - clear
+        - nvim
+  - window_name: container shell
+    panes: 
+      - shell_command:
+        - sleep 1
+        - podman exec -it dagr-dev zsh
+  - window_name: local shell
+    start_directory: ~/src/dagr
+  # - window_name: lazygit
+  #   panes:
+  #     - shell_command:
+  #         - cd ~/src/dagr
+  #         - lazygit
+  # - window_name: system monitor
+  #   panes:
+  #     - nvtop
+  #     - htop
+  - window_name: services
+    start_directory: ~/src
+    layout: even-vertical
+    panes:
+      - shell_command:
+          - tensorboard --logdir dagr/data/ray_results
+      - shell_command:
+        - sleep 1
+        - podman exec -it dagr-dev zsh
+        - streamlit run data_exploration/visualization/streamlit_graph_vis/app.py
+      - shell_command:
+        - echo mystic_replay

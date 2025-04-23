@@ -1,0 +1,27 @@
+session_name: dagr
+windows:
+  - window_name: nvim
+    start_directory: ~/src/dev-wrapper
+    panes:
+      - shell_command:
+        - ./run_or_attach.sh dagr
+  - window_name: container shell
+    start_directory: ~/src/dev-wrapper
+    panes:
+      - shell_command:
+        - ./attach.sh dagr
+  - window_name: local shell
+    start_directory: ~/src/dagr
+  - window_name: services
+    start_directory: ~/src/dev-wrapper
+    layout: even-vertical
+    panes:
+      - shell_command:
+        - ./attach.sh dagr
+        - tensorboard --logdir data/ray_results
+      - shell_command:
+        - ./attach.sh dagr
+        - streamlit run data_exploration/visualization/streamlit_graph_vis/app.py
+      - shell_command:
+        - cd ~/src/dagr/data/replays
+        - echo mystic_replay

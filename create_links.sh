@@ -4,7 +4,7 @@
 source_dir="$HOME/dotfiles"
 
 # Set the target directory where you want the symlinks
-target_dir="$XDG_CONFIG_HOME" # or another path, like "$HOME/.config-backup"
+target_dir="/home/treyw/.config" # or another path, like "$HOME/.config-backup"
 
 # Check if target directory exists; create it if not
 if [ ! -d "$target_dir" ]; then
